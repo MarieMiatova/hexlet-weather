@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <title>Сайт прогноза погоды</title>
+  <body>
+    <section class="top-banner">
+      <div class="container">
+        <h1 class="heading">Прогноз погоды</h1>
+        <form>
+          <input type="text" placeholder="Найти город" autofocus />
+          <button id="submit-btn" type="submit" disabled="true">Найти</button>
+          <span class="msg"></span>
+        </form>
+      </div>
+    </section>
+    <section class="ajax-section">
+      <div class="container">
+        <ul class="cities"></ul>
+      </div>
+    </section>
+  </body>
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
+</html>
