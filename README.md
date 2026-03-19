@@ -16,3 +16,6 @@
 ## Деплой
 
 Проект можно увидеть на сайте https://hexlet-weather.vercel.app/
+
+
+(Video-Project-.gif)
