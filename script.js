@@ -17,11 +17,11 @@ function isCityAlreadyListed(cityName, existingCities) {
       if (parts[1].length > 2) {
         cityName = parts[0];
         comparisonName = citySpan.textContent.toLowerCase();
-     } else {
-       comparisonName = cityDataName.toLowerCase();
-     }
+      } else {
+        comparisonName = cityDataName.toLowerCase();
+      }
     }
-    
+
     return comparisonName === cityName.toLowerCase();
   });
 }
@@ -87,7 +87,7 @@ weatherForm.addEventListener("submit", async (event) => {
 
   messageElement.textContent = "Населенный пункт был найден";
 
-   try {
+  try {
     const weatherInfo = await getWeatherData(enteredCity);
     const newCityElement = buildCityElement(weatherInfo);
     cityList.appendChild(newCityElement);
@@ -97,6 +97,6 @@ weatherForm.addEventListener("submit", async (event) => {
     messageElement.textContent = "Населенный пункт не найден";
   }
 
-    weatherForm.reset();
+  weatherForm.reset();
   cityInput.focus();
 });

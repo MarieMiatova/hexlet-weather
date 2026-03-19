@@ -1,11 +1,11 @@
 :root {
-  --bg_main: #0a1f44;
-  --text_light: #fff;
-  --text_med: #53627c;
-  --text_dark: #1e2432;
-  --red: #ff1e42;
-  --darkred: #c3112d;
-  --orange: #ff8c00;
+  --primary-bg: #0a1f44;
+  --light-text: #fff;
+  --medium-text: #53627c;
+  --dark-text: #1e2432;
+  --accent-red: #ff1e42;
+  --dark-accent-red: #c3112d;
+  --accent-orange: #ff8c00;
 }
 
 * {
@@ -25,14 +25,14 @@ button {
 }
 
 button:disabled {
-    opacity: 0.7;
-    cursor: default;
+  opacity: 0.7;
+  cursor: default;
 }
- 
+
 input {
   -webkit-appearance: none;
 }
- 
+
 button,
 input {
   border: none;
@@ -53,8 +53,8 @@ ul {
 
 body {
   font: 1rem/1.3 "Roboto", sans-serif;
-  background: var(--bg_main);
-  color: var(--text_dark);
+  background: var(--primary-bg);
+  color: var(--dark-text);
   padding: 70px;
 }
 
@@ -65,9 +65,8 @@ body {
   padding: 0 15px;
 }
 
-
 .top-banner {
-  color: var(--text_light);
+  color: var(--light-text);
 }
 
 .heading {
@@ -91,7 +90,7 @@ body {
 }
 
 .top-banner form input::placeholder {
-  color: currentColor; 
+  color: currentColor;
 }
 
 .top-banner form button {
@@ -101,12 +100,12 @@ body {
   padding: 15px 20px;
   margin-left: 15px;
   border-radius: 5px;
-  background: var(--red);
+  background: var(--accent-red);
   transition: background 0.3s ease-in-out;
 }
 
 .top-banner form button:hover {
-  background: var(--darkred);
+  background: var(--dark-accent-red);
 }
 
 .top-banner form .msg {
@@ -116,7 +115,6 @@ body {
   max-width: 450px;
   min-height: 40px;
 }
-
 
 .ajax-section {
   margin: 70px 0 20px;
@@ -132,8 +130,8 @@ body {
   position: relative;
   padding: 40px 10%;
   border-radius: 20px;
-  background: var(--text_light);
-  color: var(--text_med);
+  background: var(--light-text);
+  color: var(--medium-text);
 }
 
 .ajax-section .city::after {
@@ -146,7 +144,7 @@ body {
   z-index: -1;
   opacity: 0.3;
   border-radius: 20px;
-  background: var(--text_light);
+  background: var(--light-text);
 }
 
 .ajax-section figcaption {
@@ -159,7 +157,7 @@ body {
   font-size: 5rem;
   font-weight: bold;
   margin-top: 10px;
-  color: var(--text_dark);
+  color: var(--dark-text);
 }
 
 .ajax-section .city sup {
@@ -169,8 +167,8 @@ body {
 .ajax-section .city-name sup {
   padding: 0.2em 0.6em;
   border-radius: 30px;
-  color: var(--text_light);
-  background: var(--orange);
+  color: var(--light-text);
+  background: var(--accent-orange);
 }
 
 .ajax-section .city-icon {
@@ -179,24 +177,24 @@ body {
   height: 100px;
 }
 
-
+/* Page Footer */
 .page-footer {
   text-align: right;
   font-size: 1rem;
-  color: var(--text_light);
+  color: var(--light-text);
   margin-top: 40px;
 }
 
 .page-footer span {
-  color: var(--red);
+  color: var(--accent-red);
 }
 
-
+/* Responsive Design */
 @media screen and (max-width: 1000px) {
   body {
     padding: 30px;
   }
-  
+
   .ajax-section .cities {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -207,16 +205,16 @@ body {
   .ajax-section .city-temp {
     font-size: 3rem;
   }
-  
+
   .ajax-section {
     margin-top: 20px;
   }
-  
+
   .top-banner form {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .top-banner form input,
   .top-banner form button {
     width: 100%;
@@ -225,7 +223,7 @@ body {
   .top-banner form button {
     margin: 20px 0 0 0;
   }
-  
+
   .top-banner form .msg {
     position: static;
     max-width: none;
@@ -242,12 +240,11 @@ body {
   body {
     padding: 15px;
   }
-  
+
   .ajax-section .cities {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-
 
 .api {
   background: #fffbbc;
