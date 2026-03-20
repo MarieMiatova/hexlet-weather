@@ -18,4 +18,4 @@
 Проект можно увидеть на сайте https://hexlet-weather.vercel.app/
 
 
-(Video-Project-.gif)
+![Video-Project-](https://github.com/user-attachments/assets/388ec65a-cbf2-4e5c-8b63-838c1b4e3cc9)
