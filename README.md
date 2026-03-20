@@ -2,6 +2,10 @@
 
 Простое веб-приложение для получения текущего прогноза погоды по названию города (с поддержкой уточнения страны).
 
+
+[![Maintainability](https://qlty.sh/gh/MarieMiatova/projects/hexlet-weather/maintainability.svg)](https://qlty.sh/gh/MarieMiatova/projects/hexlet-weather)
+
+
 ## Стек
 
 - **Frontend:** HTML, CSS, JavaScript
