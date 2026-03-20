@@ -19,3 +19,6 @@
 
 
 ![Video-Project-](https://github.com/user-attachments/assets/388ec65a-cbf2-4e5c-8b63-838c1b4e3cc9)
+
+
+[![Maintainability](https://qlty.sh/gh/MarieMiatova/projects/hexlet-weather/maintainability.svg)](https://qlty.sh/gh/MarieMiatova/projects/hexlet-weather)
